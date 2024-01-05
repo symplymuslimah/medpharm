@@ -1,0 +1,359 @@
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    list-style-type:none;
+    text-decoration:none;
+    font-family: 'Heebo', sans-serif;
+}
+
+:root{
+    --light-green-cyan: #7bdcb5;
+    --vivid-green-cyan: #00d084;
+    --pale-cyan-blue: #8ed1fc;
+    --vivid-cyan-blue: #0693e3;
+    --cyan-bluish-gray: #abb8c3;
+    --global-color-0: #1dbfc1;
+    --global-color-1: #1dbfc1;
+    --global-color-2: #000000;
+    --global-color-3: #3a3a3a;
+    --global-color-4: #effafa;
+    --global-color-5: #ffffff;
+    --global-color-6: #f2f2f2;
+    --neutral-color:#fff;
+    --span-size: 0.8rem;
+    --font-size:2rem;
+    --font2-size:0.9rem;
+    --font3-size:2.7rem;
+}
+
+body{
+   background-color:var(--global-color-4);
+}
+a{
+    color:var(--global-color-2);
+}
+span{
+    color: var(--global-color-1);
+}
+
+.container{
+    width:100%;
+    min-height:80vh;
+    background:url(/IMAGES/pharma-company-template-hero-bg.svg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+header{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    padding:1.4rem 0rem;
+}
+.line{
+  display:block;
+  width:15px;
+  height:4px;
+  background-color:black;
+  margin-bottom:10px;
+}
+.lines{
+    display:block;
+    width:15px;
+    height:14px;
+    background-color:red;
+}
+.logo img{
+  width:160px;
+}
+.icon{
+    position:relative;
+    z-index:999;
+    display:flex;
+}
+.icon-active{
+    display:none;
+}
+.icon-cancel{
+    display:none;
+}
+.navigation{
+    display:flex;
+    gap:0.4rem;
+}
+nav ul li{
+    display:inline-block;
+}
+nav ul li a {
+    margin:0px 15px;
+    transition:.4s;
+}
+nav ul li a:hover{
+    color:var(--global-color-0);
+}
+.call-us{
+    background-color:var(--global-color-1);
+    color:var(--neutral-color);
+    padding:0.5rem;
+    border-radius:25px;
+    margin-top:-10px;
+}
+.contact-page-container{
+    padding:5rem 0rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+
+}
+.contact-page-content h2{
+    font-size:4.2rem;
+    margin:1rem 0rem;
+}
+.contact-page-content p{
+    line-height:25px;
+}
+.contact-content{
+    margin:2.3rem 0rem;
+    border-bottom:1px solid  rgba(124, 118, 118, 0.644) ;
+    display:flex;
+    gap:0.7rem;
+}
+.contact-text{
+    margin-bottom:1.3rem;
+}
+.contact-text h3{
+    margin-bottom:1rem;
+}
+.contact-icon i{
+    background-color:var(--global-color-0);
+    padding:0.4rem;
+    border-radius:50%;
+    font-size:1.5rem;
+
+}
+/*forms secton */
+.contact-form{
+    background-color:var(--global-color-5);
+    padding:2.3rem 1.7rem;
+}
+.form-input{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-input label{
+   margin:0.3rem 0rem;
+}
+ input{
+   padding:0.9rem;
+   margin-bottom:1.6rem;
+}
+button{
+    border:2px solid var(--global-color-0);
+    border-radius:35px;
+    padding:0.9rem;
+    margin-top:0.8rem;
+    width: fit-content;
+    transition:0.4s;
+}
+button:hover{
+    background-color:var(--global-color-0);
+}
+
+
+/* our company section */
+.our-company-section{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    padding:5rem 0rem;
+
+}
+.our-company-image{
+    width:550px;
+}
+.our-company-image img{
+    width:100%;
+}
+.our-company-content{
+    width:440px;
+}
+.our-company-content h2{
+    margin:1.4rem 0rem;
+    font-size:var(--font-size);
+}
+.our-company-content p{
+    line-height:25px;
+    margin-bottom:1.3rem;
+    font-size:0.9rem;
+
+}
+.our-company-content h3{
+    font-size:1rem;
+   
+}
+
+/* our patrnership section */
+.partnership-section{
+    width:100%;
+    min-height:60vh;
+    background-color:var(--global-color-0);
+    background-image:url(/IMAGES/pharma-company-template-cta-bg.svg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+}
+.partnership-content{
+    position:absolute;
+    top:20%;
+    left:10%;
+    color:var(--global-color-5);
+ 
+}
+.partnership-content h2{
+    margin:1.6rem 0rem 1rem 0rem;
+    font-size:var(--font-size);
+    max-width:550px;
+}
+.partnership-content p{
+    margin-bottom:1rem;
+}
+.contact{
+    background-color:var(--global-color-5);
+    border-radius:50px;
+    padding:0.7rem;
+    width:30%;
+}
+.contact a{
+    color:var(--global-color-0);
+}
+
+
+
+
+/* footer section */
+.footer-section{
+    width: 100%;
+}
+footer{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    padding:7rem 0rem;
+    cursor:pointer;
+}
+footer h3{
+    margin-bottom:1.5rem;
+}
+.footer-content ul li{
+    margin:0.7rem 0rem;
+}
+
+/*copyright container */
+.copyright-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-top:1px solid rgba(124, 118, 118, 0.644);
+    padding:1.3rem;
+}
+.copyright-content p{
+    font-size:var(--font2-size);
+    margin:0.3rem 0rem;
+}
+.copyright-icon i{
+    color:var(--global-color-0);
+    font-size:1.2rem;
+    margin:0rem 0.8rem;
+}
+
+/*media query */
+@media (max-width:1024px) {
+    .contact-page-container{
+        flex-direction:column;
+    }
+    .contact-form{
+        width:80%;
+    }
+    .our-company-section{
+        display:flex;
+        flex-direction:column-reverse;
+        padding:1.3rem;
+    }
+    .our-company-content{
+        width:90%;
+    }
+    
+    footer{
+        display:flex;
+        align-items:center;
+         flex-direction:column;
+         text-align: center;
+         gap:1.5rem;
+        
+    }
+    .copyright-container{
+        display:flex;
+        align-items:center;
+        text-align:center;
+        flex-direction:column;
+    
+    }
+}
+
+@media (max-width:900px) {
+    .icon-active{
+        display:block;
+        font-size:1.3rem;
+    }
+    .icon-cancel{
+        display:none;
+        font-size:1.3rem;
+    }
+    .nav-header{
+        position:absolute;
+        top:100px;
+        left:0;
+        height:300px;
+        width:100vw;
+        background-color:var(--global-color-5);
+        display:none;
+    }
+    .nav-header ul{
+        display:flex;
+        flex-direction:column;
+    }
+    .nav-header ul li {
+        border-bottom:2px solid rgba(124, 118, 118, 0.644);
+        padding:1rem;
+    }
+    .call-us{
+        display:none;
+    }
+    .active{
+        display:block;
+    }
+
+}
+
+@media (max-width:600px) {
+    .contact-one{
+        padding:1.7rem;
+    }
+    .our-company-content{
+        padding:1.2rem;
+    }
+    .contact-page-content h2{
+        font-size:var(--font-size);
+       
+    }
+    .our-company-image{
+        width:320px;
+    }
+    .contact{
+        width:40%;
+    }
+}
